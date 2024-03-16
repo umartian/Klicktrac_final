@@ -39589,12 +39589,99 @@ footer.bg-dark.angled.upper-start:before {
   }
 }
 
-// <uniquifier>: Use a uniquifier for the class name
-// <weight>: Use a value from 100 to 900
 
-.jost-<uniquifier> {
+
+
+
+.jost-font{
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 900 !important;
   font-style: normal;
+  font-size: 50px!important;
+}
+
+
+.Home-background{
+  background-image: url(/assets/img/Home_background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+.hero-heading{
+  
+  background: -webkit-linear-gradient(rgb(185, 74, 238), rgb(255, 88, 179));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.forced-default-color{
+  color:rgba(0, 0, 0, 0.8)!important;
+}
+
+.text-primary{
+  color:black!important;
+}
+
+.jost-fontsm{
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700 !important;
+  font-style: normal;
+  font-size: 2.0rem;
+  background: -webkit-linear-gradient(rgb(185, 74, 238), rgb(255, 88, 179));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+ul{
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+.checkmark {
+  display: inline-block;
+  transform: rotate(45deg);
+  height: 25px;
+  width: 12px;
+  margin-right: 20px;
+
+  border-bottom: 5px solid rgb(185, 74, 238);
+  border-right: 5px solid rgb(185, 74, 238);
+}
+
+.jost-fontsm2{
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700 !important;
+  font-style: normal;
+
+  background: -webkit-linear-gradient(rgb(185, 74, 238), rgb(255, 88, 179));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer{
+  background-color:rgb(255,88,179)!important;
+}
+
+
+.jost-fontsm2-reverse{
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700 !important;
+  font-style: normal;
+}
+
+
+.socio{
+  color: white !important;
+}
+
+
+html {
+  scroll-behavior: smooth;
 }
