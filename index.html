@@ -316,26 +316,19 @@
             <h2 class="display-4 mb-3 jost-fontsm">Join Waitlist</h2>
             <p><b>Need Assistance? We've Got You Covered</b></p>
             <p>Have a question, feedback, or just want to share your success story? Our support team is here, ready to ensure your KLICK TRAC experience is nothing short of phenomenal.</p>
-            <form id="myForm" class="mt-4">
-              <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name" name="name" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-              </div>
-              <div class="form-group">
-                <label for="employees">Number of Employees:</label>
-                <select class="form-control" id="employees" name="employees" required>
-                  <option value="">Select Number of Employees</option>
+            <form id="submit-to-google-sheet">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required><br><br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required><br><br>
+              <label for="employees">No of Employees:</label>
+              <select id="employees" name="employees" required>
                   <option value="0-10">0-10</option>
                   <option value="10-50">10-50</option>
                   <option value="50+">50+</option>
-                </select>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+              </select><br><br>
+              <button type="submit">Submit</button>
+          </form>
             <!-- /form -->
           </div>
           <!--/column -->
@@ -480,29 +473,11 @@
   <!-- /.content-wrapper -->
 
 
-  <script>
-    document.getElementById('myForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-      submitForm();
-    });
 
-    function submitForm() {
-      var formData = new FormData(document.getElementById('myForm'));
-      fetch('https://script.google.com/macros/s/AKfycbxcHU63woIXNDFIOqXTWsD1GVFCQaBYQ_lk1ukdxgp_/dev', {
-        method: 'POST',
-        mode: 'no-cors',
-        body: formData
-      })
-      .then(response => {
-        console.log('Success!', response);
-        // Optionally, redirect to a thank you page or show a success message
-      })
-      .catch(error => console.error('Error:', error));
-    }
-  </script>
 
   <script src="./assets/js/plugins.js"></script>
   <script src="./assets/js/theme.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
