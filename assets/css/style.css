@@ -254,7 +254,7 @@ Author:		elemis
 }
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family:"Jost", sans-serif;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -612,7 +612,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .display-1 {
-    font-size: 2.4rem;
+    font-size: 3.5rem !important;
   }
 }
 .display-2 {
@@ -28977,7 +28977,7 @@ button:focus {
   padding-bottom: 0.75rem;
 }
 .gradient-1 {
-  background-image: linear-gradient(120deg, #f857a6 10%, #ef3f6e 100%);
+  background-image: linear-gradient(to right, #B94AEE, #FF58B3);
 }
 .gradient-1.btn-outline-gradient,
 .gradient-1.btn-outline-gradient span {
@@ -32168,7 +32168,7 @@ button.hamburger span {
   border: 0;
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--bs-primary);
+ 
   transition: all 150ms ease-in-out;
   background: none;
 }
@@ -32188,7 +32188,7 @@ button.hamburger span {
   margin-top: -0.25rem;
   margin-left: -0.3rem;
   display: inline-block;
-  color: var(--bs-primary);
+  
 }
 .accordion-wrapper .card-header button.collapsed {
   color: #343f52;
@@ -32197,7 +32197,7 @@ button.hamburger span {
   content: "\e92d";
 }
 .accordion-wrapper .card-header button:hover {
-  color: var(--bs-primary);
+
 }
 .accordion-item .card-body {
   padding: 0 1.25rem 0.25rem 2.35rem;
@@ -39602,19 +39602,23 @@ footer.bg-dark.angled.upper-start:before {
 }
 
 
-.Home-background{
-  background-image: url(/assets/img/Home_background.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-size: 100% 100%;
+
+
+.hero-heading {
+  /* Adding the standard gradient syntax along with the prefixed version for compatibility */
+  background: -webkit-linear-gradient(to right, rgb(185, 74, 238), rgb(255, 88, 179)); /* Chrome, Safari */
+  background: linear-gradient(to right, rgb(185, 74, 238), rgb(255, 88, 179)); /* Standard syntax for other browsers */
+  
+  /* Ensuring the gradient applies to the text */
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  /* Making the text color transparent so the gradient is visible */
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* Standard syntax */
 }
 
-.hero-heading{
-  
-  background: -webkit-linear-gradient(rgb(185, 74, 238), rgb(255, 88, 179));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 
 .forced-default-color{
   color:rgba(0, 0, 0, 0.8)!important;
@@ -39630,9 +39634,16 @@ footer.bg-dark.angled.upper-start:before {
   font-weight: 700 !important;
   font-style: normal;
   font-size: 2.0rem;
-  background: -webkit-linear-gradient(rgb(185, 74, 238), rgb(255, 88, 179));
+  background: -webkit-linear-gradient(to right, rgb(185, 74, 238), rgb(255, 88, 179)); /* Chrome, Safari */
+  background: linear-gradient(to right, rgb(185, 74, 238), rgb(255, 88, 179)); /* Standard syntax for other browsers */
+  
+  /* Ensuring the gradient applies to the text */
   -webkit-background-clip: text;
+  background-clip: text;
+  
+  /* Making the text color transparent so the gradient is visible */
   -webkit-text-fill-color: transparent;
+  color: transparent; /* Standard syntax */
   
 }
 
@@ -39665,7 +39676,7 @@ ul{
 }
 
 footer{
-  background-color:rgb(255,88,179)!important;
+  background-color:#BE4BEB;
 }
 
 
@@ -39685,5 +39696,53 @@ footer{
 html {
   scroll-behavior: smooth;
 }
+
+Body {
+  font-family: "Jost", sans-serif !important;
+}
+
+
+#loader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #09f;
+
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
