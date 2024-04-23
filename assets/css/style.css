@@ -32158,6 +32158,7 @@ button.hamburger span {
   background: none;
   border: 0;
   padding: 0.9rem 1.3rem 0.85rem;
+  background-color: #f5f5f5;
 }
 .accordion-wrapper .card-header button {
   cursor: pointer;
@@ -32201,6 +32202,7 @@ button.hamburger span {
 }
 .accordion-item .card-body {
   padding: 0 1.25rem 0.25rem 2.35rem;
+  background-color: #f5f5f5;
 }
 .accordion-item.icon .card-body {
   padding: 0 1.25rem 0.25rem 2.8rem;
@@ -39734,6 +39736,51 @@ Body {
     transform: rotate(360deg);
   }
 }
+
+.section-grey{
+  background-color: #F5F5F5;
+}
+
+
+
+  .dropdown {
+    position: relative;
+    
+  }
+
+  .form-control {
+    appearance: none; /* Remove default styling */
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+    padding-right: 30px; /* Make space for the icon */
+    background: white;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+
+  .dropdown::after {
+    content: '▼'; /* Custom icon */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Makes it non-interactive */
+    color: #333; /* Icon color */
+  }
+
+
+  .centered-container {
+    display: flex; /* Enables Flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically, optional if you need vertical centering */
+   
+  }
+
+
+  .centered-container button{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
 
 
