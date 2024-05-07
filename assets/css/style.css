@@ -39786,6 +39786,33 @@ Body {
   }
 
 
+  /* Styles for screens wider than 768px */
+@media (min-width: 769px) {
+  .mobile {
+      display: none;  /* Hide the mobile-specific h1 on non-mobile devices */
+  }
+}
+
+/* Styles for screens up to 768px wide */
+@media (max-width: 768px) {
+  .hero-heading:not(.mobile) {
+      display: none;  /* Hide the non-mobile h1 on mobile devices */
+  }
+  .hero-heading {
+      font-size: 35px !important;  /* Set font size for all h1 with class 'hero-heading' to 16px on mobile */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .logo2 {
+      max-width: 50%; /* Resize only the logo2 image on mobile devices */
+      height: auto; /* Maintains the aspect ratio */
+  }
+}
+
+
+
   
 
 
