@@ -39811,6 +39811,20 @@ Body {
   }
 }
 
+/* Hides elements with the mobile-only class on screens wider than 768px */
+@media (min-width: 768px) {
+  .mobile-only {
+      display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+      padding-left: 24px;
+      padding-right: 24px;
+      
+  }
+}
 
 
   
